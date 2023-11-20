@@ -22,7 +22,6 @@ Make sure you have Node.js and npm installed on your machine.
 Navigate to the project directory:
 
 ```bash
-Copy code
 npm install
 ```
 
@@ -31,14 +30,15 @@ To start the development server with nodemon (auto-restart on file changes), run
 
 ```bash
 npm run dev
-The server will be running at http://localhost:3000 by default.
 ```
+
+The server will be running at http://localhost:3000 by default.
 
 Routes
 
 POST /api/users: Add a new user to the database.
 Example:
-curl -X POST -H "Content-Type: application/json" -d '{"name":"John Doe","role":"Admin","email":"john@example.com","phoneNumber":"123-456-7890"}' http://localhost:3000/api/users
+POST "Content-Type: application/json" -d '{"name":"John Doe","role":"Admin","email":"john@example.com","phoneNumber":"123-456-7890"}' http://localhost:3000/api/users
 
 GET /api/users: Get all users from the database.
 Example:
